@@ -1,0 +1,129 @@
+{
+  "id": "8f2604f3-65d5-49d2-b992-6e2efcec4e84",
+  "name": "team8-QueryFew",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "4fbb73db-e940-473e-b6ff-1c73ef2433a4",
+      "data": [
+        {
+          "text": "orders placed in "
+        },
+        {
+          "text": "last week",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "55a50996-4aa9-42fd-8ef2-def594c76477",
+      "data": [
+        {
+          "text": "last "
+        },
+        {
+          "text": "7",
+          "alias": "count",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " orders for "
+        },
+        {
+          "text": "Imgaing Technologies",
+          "alias": "customer_name",
+          "meta": "@customer_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bf9f1351-d981-4bdf-9550-7c858c6d1bdd",
+      "data": [
+        {
+          "text": "last "
+        },
+        {
+          "text": "5",
+          "alias": "count",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " orders for "
+        },
+        {
+          "text": "ATT",
+          "alias": "customer_name",
+          "meta": "@customer_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "862b8d1c-4a71-4675-9d18-1891d32ba023",
+      "data": [
+        {
+          "text": "Query last "
+        },
+        {
+          "text": "5",
+          "alias": "count",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " orders for customer "
+        },
+        {
+          "text": "ATT",
+          "alias": "customer_name",
+          "meta": "@customer_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "team8-queryfeworder",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "count",
+          "value": "$count",
+          "prompts": []
+        },
+        {
+          "dataType": "@customer_name",
+          "name": "customer_name",
+          "value": "$customer_name"
+        },
+        {
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period"
+        }
+      ],
+      "speech": "Sure. Last $count orders for $customer_name are ready to be shipped."
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "fallbackIntent": false
+}

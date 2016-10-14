@@ -1,0 +1,213 @@
+{
+  "id": "acffb1a7-692e-44a6-a626-a21fcc0b3a93",
+  "name": "team8-CreateOrder",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "ea906ad8-3ada-4908-8a24-c113484b31d3",
+      "data": [
+        {
+          "text": "new order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d96498d6-e8ac-4c8d-80fa-ac4c4d8479e8",
+      "data": [
+        {
+          "text": "please enter a new order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "95917c73-a4a5-43aa-8dcb-c2d18d7a814c",
+      "data": [
+        {
+          "text": "create an order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b5008666-f8da-430b-92cc-b648ccb387b3",
+      "data": [
+        {
+          "text": "enter an order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8c8ba3d8-6197-4200-b04d-e270ff23a214",
+      "data": [
+        {
+          "text": "could you please enter an order for me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2dde9805-2445-4f94-aa87-b01b1b54ec7a",
+      "data": [
+        {
+          "text": "create order for "
+        },
+        {
+          "text": "wm100",
+          "alias": "item_name",
+          "meta": "@item_name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "66",
+          "alias": "quantity",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": ""
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "08ae7852-8793-4610-88fd-ee8ab9967872",
+      "data": [
+        {
+          "text": "place order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a3964a82-3e75-4c36-a8a5-f3895f74aafa",
+      "data": [
+        {
+          "text": "Place an order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cb6203e8-285b-47cd-b42a-40a20e356b8c",
+      "data": [
+        {
+          "text": "sales order for item "
+        },
+        {
+          "text": "AMO-100",
+          "alias": "item_name",
+          "meta": "@item_name",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "20",
+          "alias": "quantity",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " quantity"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "60ac0361-9e7b-48f9-95ad-7442744740fc",
+      "data": [
+        {
+          "text": "book sales order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "36239df2-fbef-4ffc-9eca-90ab47c8696f",
+      "data": [
+        {
+          "text": "book order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e4c047bd-d4b7-4425-baf4-4b47c75e5594",
+      "data": [
+        {
+          "text": "Book an order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "764a07e1-1e02-44b3-8c6e-e8ce6da948d6",
+      "data": [
+        {
+          "text": "Create Order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "team8-createorder",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@item_name",
+          "name": "item_name",
+          "value": "$item_name",
+          "prompts": [
+            "Sure. Which item?",
+            "What item do you want this order for?",
+            "Can you clarify the item you want to place an order for?",
+            "I can help you with placing an order. Can you tell me which item?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "quantity",
+          "value": "$quantity",
+          "prompts": [
+            "How many SKU\u0027s for $item_name do you need?",
+            "How many units?",
+            "What quantity do you want to place the order for $item_name?"
+          ]
+        }
+      ],
+      "speech": [
+        "Gotcha. $quantity units of item $item_name ordered!!",
+        "Order placed for $item_name, quantity $quantity"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "fallbackIntent": false
+}

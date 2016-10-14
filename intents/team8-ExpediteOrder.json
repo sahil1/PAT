@@ -1,0 +1,143 @@
+{
+  "id": "f1e4d5c2-a7ba-4f70-9f70-526f0069311f",
+  "name": "team8-ExpediteOrder",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "dd312649-ea90-4f30-8993-be6bc5de933e",
+      "data": [
+        {
+          "text": "expedite order "
+        },
+        {
+          "text": "223232",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " by "
+        },
+        {
+          "text": "5 days",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d59acbb5-febf-4ef9-9e38-65debe9011c4",
+      "data": [
+        {
+          "text": "reschedule"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "915cde7a-a706-47a3-83a1-528de6b56dcc",
+      "data": [
+        {
+          "text": "Reschedule"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ba1ced9e-0ca6-4a19-84ae-973a1c6e7bdf",
+      "data": [
+        {
+          "text": "Can I get my order faster?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "33715cf6-16a8-4859-b23b-67678b86cfe0",
+      "data": [
+        {
+          "text": "Can you help me get order "
+        },
+        {
+          "text": "23232",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " faster?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "27634648-3a46-4e34-87f1-219d53051218",
+      "data": [
+        {
+          "text": "Expedite order "
+        },
+        {
+          "text": "887234",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9862393a-81a4-4369-95f5-9055881d22f5",
+      "data": [
+        {
+          "text": "Expedite"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "team8-expediteorder",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "order_number",
+          "value": "$order_number",
+          "prompts": [
+            "I can help you with an expedition request. What order number are you looking an help with?",
+            "Sure. Lets see what we can do to expedite your request. What is the order number that you want to expedite?",
+            "Hmm. Let me see if I can do that for you. What is the order number?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.duration",
+          "name": "duration",
+          "value": "$duration",
+          "prompts": [
+            "How many days do you want to advance this order by?",
+            "How many days in advance do you want to expedite this order by?",
+            "How early do you want this order?"
+          ]
+        }
+      ],
+      "speech": "Expedition request for order $order_number has been placed. What next can I do for you?"
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "fallbackIntent": false
+}

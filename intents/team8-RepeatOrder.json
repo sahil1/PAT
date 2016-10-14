@@ -1,0 +1,103 @@
+{
+  "id": "56496935-2e0e-46d1-9948-b94b775ef1d5",
+  "name": "team8-RepeatOrder",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "92269821-4d64-4a45-a8bc-d4cd62151cd3",
+      "data": [
+        {
+          "text": "Reorder "
+        },
+        {
+          "text": "22321",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ad497f49-7f71-457e-8194-d2342fdea88b",
+      "data": [
+        {
+          "text": "repeat order "
+        },
+        {
+          "text": "23232",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2757e92f-a649-42ef-9ba3-5d2030d5df6c",
+      "data": [
+        {
+          "text": "can you repeat order "
+        },
+        {
+          "text": "23232",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " for me?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1e8c0451-ef47-459d-8df5-f4dbabdeecfd",
+      "data": [
+        {
+          "text": "Repeat Order "
+        },
+        {
+          "text": "77650",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "team8-repeatorder",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "order_number",
+          "value": "$order_number",
+          "prompts": [
+            "Sure. What order would you like to repeat?",
+            "I can help you with repeating an order. Just let me know order number for order you would like to repeat.",
+            "I am happy to help. Can I have the order number for order that you want to repeat?"
+          ]
+        }
+      ],
+      "speech": [
+        "A new order similar to $order_number has been placed.",
+        "Good News!! I\u0027ve placed a new order same as order number $order_number.",
+        "Order same as $order_number placed. Anything else I can help you with?"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "fallbackIntent": false
+}

@@ -1,0 +1,171 @@
+{
+  "id": "8408806d-7a1e-4996-903a-458f68401f74",
+  "name": "team8-QueryOrder",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "873f0d9a-0ed9-424c-8030-32080821cb1f",
+      "data": [
+        {
+          "text": "query status for 88343"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ee37f0ac-e6e8-4a23-be3e-5b69028d8b84",
+      "data": [
+        {
+          "text": "query "
+        },
+        {
+          "text": "status",
+          "alias": "order_entity",
+          "meta": "@order_entity",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "88343",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8d9c8568-1cf4-41f6-a522-6d244d5b2a06",
+      "data": [
+        {
+          "text": "Find"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "024a741a-de26-4e64-b1d2-5793534000ad",
+      "data": [
+        {
+          "text": "Query"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b107bc07-a9cd-4539-99d7-cb14ea9ce84a",
+      "data": [
+        {
+          "text": "where is order "
+        },
+        {
+          "text": "99834",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f1994e4a-9c4f-4f33-9000-0cc762ec9447",
+      "data": [
+        {
+          "text": "Can you help me with an order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4070f9e8-925d-4541-bcbb-69c5b5e89bd3",
+      "data": [
+        {
+          "text": "look up order "
+        },
+        {
+          "text": "2232",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6487114e-951c-4ede-ba32-7753a00c6b98",
+      "data": [
+        {
+          "text": "Can you tell me the "
+        },
+        {
+          "text": "status",
+          "alias": "order_entity",
+          "meta": "@order_entity",
+          "userDefined": true
+        },
+        {
+          "text": " of order "
+        },
+        {
+          "text": "77232",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "team8-queryorder",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "order_number",
+          "value": "$order_number",
+          "prompts": [
+            "I can help you look up details for an existing order. Just tell me the order number.",
+            "I can query up an order. Can you pl. tell me the order nubmer?",
+            "Sure. What order number do you want to know about?",
+            "Definitely. Order Number please!!",
+            "At your service boss. What order number do you need help with?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@order_entity",
+          "name": "order_entity",
+          "value": "$order_entity",
+          "prompts": [
+            "What will you like to know about $order_number - Just say status, carrier, value etc and I can help you get the details you want?",
+            "What is it that you want to know about order $order_number?",
+            "Let me know what information are looking for?",
+            "Sure. What will you like to know about order $order_number?"
+          ]
+        }
+      ],
+      "speech": [
+        "Order $order_number contains 15 units of AMO-100 worth $1123.87 is ready to be shipped via FedEx on Oct 17, 2016.",
+        "Order $order_number contains 7 units of WM100 worth $231.75 is ready to be shipped via UPS on Oct 18, 2016."
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}
