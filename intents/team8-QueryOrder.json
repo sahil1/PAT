@@ -23,7 +23,7 @@
         {
           "text": "status",
           "alias": "order_entity",
-          "meta": "@order_entity",
+          "meta": "@team8-order_entity",
           "userDefined": true
         },
         {
@@ -110,7 +110,7 @@
         {
           "text": "status",
           "alias": "order_entity",
-          "meta": "@order_entity",
+          "meta": "@team8-order_entity",
           "userDefined": true
         },
         {
@@ -148,7 +148,7 @@
         },
         {
           "required": true,
-          "dataType": "@order_entity",
+          "dataType": "@team8-order_entity",
           "name": "order_entity",
           "value": "$order_entity",
           "prompts": [

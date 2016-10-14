@@ -63,7 +63,7 @@
         {
           "text": "wm100",
           "alias": "item_name",
-          "meta": "@item_name",
+          "meta": "@team8-item_name",
           "userDefined": true
         },
         {
@@ -74,9 +74,6 @@
           "alias": "quantity",
           "meta": "@sys.number",
           "userDefined": true
-        },
-        {
-          "text": ""
         }
       ],
       "isTemplate": false,
@@ -111,7 +108,7 @@
         {
           "text": "AMO-100",
           "alias": "item_name",
-          "meta": "@item_name",
+          "meta": "@team8-item_name",
           "userDefined": true
         },
         {
@@ -179,7 +176,7 @@
       "parameters": [
         {
           "required": true,
-          "dataType": "@item_name",
+          "dataType": "@team8-item_name",
           "name": "item_name",
           "value": "$item_name",
           "prompts": [

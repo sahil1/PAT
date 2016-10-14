@@ -1,0 +1,34 @@
+{
+  "id": "e3855f62-275c-4444-a6fc-71a02a1296ff",
+  "name": "team8-item_name",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "WM100",
+      "synonyms": [
+        "WM100",
+        "wm100"
+      ]
+    },
+    {
+      "value": "AMO-100",
+      "synonyms": [
+        "AMO-100",
+        "amo100",
+        "amo-100",
+        "AMO100"
+      ]
+    },
+    {
+      "value": "CDO-100",
+      "synonyms": [
+        "CDO-100",
+        "cdo-100",
+        "cdo100",
+        "CDO100"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

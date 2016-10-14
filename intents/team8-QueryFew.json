@@ -38,7 +38,7 @@
         {
           "text": "Imgaing Technologies",
           "alias": "customer_name",
-          "meta": "@customer_name",
+          "meta": "@team8-customer_name",
           "userDefined": true
         }
       ],
@@ -63,7 +63,7 @@
         {
           "text": "ATT",
           "alias": "customer_name",
-          "meta": "@customer_name",
+          "meta": "@team8-customer_name",
           "userDefined": true
         }
       ],
@@ -88,7 +88,7 @@
         {
           "text": "ATT",
           "alias": "customer_name",
-          "meta": "@customer_name",
+          "meta": "@team8-customer_name",
           "userDefined": true
         }
       ],
@@ -110,7 +110,7 @@
           "prompts": []
         },
         {
-          "dataType": "@customer_name",
+          "dataType": "@team8-customer_name",
           "name": "customer_name",
           "value": "$customer_name"
         },

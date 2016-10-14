@@ -1,0 +1,45 @@
+{
+  "id": "97c3747d-b96f-43b7-8ca4-6f27d6504da8",
+  "name": "team8-customer_name",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Imaging Technologies",
+      "synonyms": [
+        "Imaging Technologies",
+        "imaging technologies"
+      ]
+    },
+    {
+      "value": "Customer Service and Rentals",
+      "synonyms": [
+        "Customer Service and Rentals",
+        "Customer Service \u0026 Rentals",
+        "Customer Service Rentals"
+      ]
+    },
+    {
+      "value": "American Telephone \u0026 Telegraph",
+      "synonyms": [
+        "American Telephone \u0026 Telegraph",
+        "ATT",
+        "AT\u0026T"
+      ]
+    },
+    {
+      "value": "Imaging Innovation",
+      "synonyms": [
+        "Imaging Innovation",
+        "imaging innovation"
+      ]
+    },
+    {
+      "value": "Imgaing Technologies",
+      "synonyms": [
+        "Imgaing Technologies"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

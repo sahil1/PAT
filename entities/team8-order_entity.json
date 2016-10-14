@@ -1,0 +1,51 @@
+{
+  "id": "790ebb78-e260-4311-84c9-c21ee9bfc81c",
+  "name": "team8-order_entity",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "status",
+      "synonyms": [
+        "status",
+        "Status",
+        "where"
+      ]
+    },
+    {
+      "value": "items",
+      "synonyms": [
+        "items",
+        "item names"
+      ]
+    },
+    {
+      "value": "ship_date",
+      "synonyms": [
+        "ship_date",
+        "Scheduled Ship Date",
+        "shipping date",
+        "arrival date"
+      ]
+    },
+    {
+      "value": "order_value",
+      "synonyms": [
+        "order_value",
+        "Order Value",
+        "Amount",
+        "Value"
+      ]
+    },
+    {
+      "value": "carrier",
+      "synonyms": [
+        "carrier",
+        "Carrier",
+        "Shipper",
+        "shipper"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
