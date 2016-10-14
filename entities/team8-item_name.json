@@ -35,6 +35,14 @@
         "ASO24",
         "AS00024"
       ]
+    },
+    {
+      "value": "iphone",
+      "synonyms": [
+        "iPhone",
+        "iphone",
+        "iphone7"
+      ]
     }
   ],
   "isEnum": false,

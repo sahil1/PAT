@@ -134,6 +134,6 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
+  "webhookUsed": true,
   "fallbackIntent": false
 }

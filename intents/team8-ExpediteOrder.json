@@ -5,13 +5,13 @@
   "contexts": [],
   "userSays": [
     {
-      "id": "dd312649-ea90-4f30-8993-be6bc5de933e",
+      "id": "1d850f68-901f-4df3-9adb-422324eb8249",
       "data": [
         {
           "text": "expedite order "
         },
         {
-          "text": "223232",
+          "text": "77065",
           "alias": "order_number",
           "meta": "@sys.number",
           "userDefined": true
@@ -20,9 +20,50 @@
           "text": " by "
         },
         {
-          "text": "5 days",
-          "alias": "duration",
-          "meta": "@sys.duration",
+          "text": "8 days",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d1c002c1-6d33-45a5-bc79-71c1291dab98",
+      "data": [
+        {
+          "text": "I need order "
+        },
+        {
+          "text": "77065",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " by "
+        },
+        {
+          "text": "Friday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "cac107af-d758-45c9-bab4-dcdf751d75a7",
+      "data": [
+        {
+          "text": "can you help me expedite order "
+        },
+        {
+          "text": "77065",
+          "alias": "order_number",
+          "meta": "@sys.number",
           "userDefined": true
         }
       ],
@@ -58,57 +99,6 @@
       ],
       "isTemplate": false,
       "count": 0
-    },
-    {
-      "id": "33715cf6-16a8-4859-b23b-67678b86cfe0",
-      "data": [
-        {
-          "text": "Can you help me get order "
-        },
-        {
-          "text": "23232",
-          "alias": "order_number",
-          "meta": "@sys.number",
-          "userDefined": true
-        },
-        {
-          "text": " faster?"
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
-    },
-    {
-      "id": "27634648-3a46-4e34-87f1-219d53051218",
-      "data": [
-        {
-          "text": "Expedite order "
-        },
-        {
-          "text": "887234",
-          "alias": "order_number",
-          "meta": "@sys.number",
-          "userDefined": true
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
-    },
-    {
-      "id": "9862393a-81a4-4369-95f5-9055881d22f5",
-      "data": [
-        {
-          "text": "Expedite "
-        },
-        {
-          "text": "2342",
-          "alias": "order_number",
-          "meta": "@sys.number",
-          "userDefined": true
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
     }
   ],
   "responses": [
@@ -123,20 +113,16 @@
           "name": "order_number",
           "value": "$order_number",
           "prompts": [
-            "I can help you with an expedition request. What order number are you looking an help with?",
-            "Sure. Lets see what we can do to expedite your request. What is the order number that you want to expedite?",
-            "Hmm. Let me see if I can do that for you. What is the order number?"
+            "I\u0027ll see what I can do about that. What order number are you looking to expedite?"
           ]
         },
         {
           "required": true,
-          "dataType": "@sys.duration",
-          "name": "duration",
-          "value": "$duration",
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
           "prompts": [
-            "How many days do you want to advance this order by?",
-            "How many days in advance do you want to expedite this order by?",
-            "How early do you want this order?"
+            "What is your expected date?"
           ]
         }
       ],

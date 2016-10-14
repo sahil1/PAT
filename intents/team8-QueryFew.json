@@ -5,6 +5,25 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "c7c2804a-e1e6-4035-8000-c3f3726233d0",
+      "data": [
+        {
+          "text": "query orders for last "
+        },
+        {
+          "text": "5",
+          "alias": "count",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " days"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
       "id": "4fbb73db-e940-473e-b6ff-1c73ef2433a4",
       "data": [
         {
@@ -12,8 +31,7 @@
         },
         {
           "text": "last week",
-          "alias": "date-period",
-          "meta": "@sys.date-period",
+          "meta": "@sys.ignore",
           "userDefined": true
         }
       ],
@@ -113,11 +131,6 @@
           "dataType": "@team8-customer_name",
           "name": "customer_name",
           "value": "$customer_name"
-        },
-        {
-          "dataType": "@sys.date-period",
-          "name": "date-period",
-          "value": "$date-period"
         }
       ],
       "speech": "Sure. Last $count orders for $customer_name are ready to be shipped."
