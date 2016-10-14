@@ -27,6 +27,14 @@
         "cdo100",
         "CDO100"
       ]
+    },
+    {
+      "value": "ASO0024",
+      "synonyms": [
+        "ASO0024",
+        "ASO24",
+        "AS00024"
+      ]
     }
   ],
   "isEnum": false,

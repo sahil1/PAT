@@ -98,7 +98,13 @@
       "id": "9862393a-81a4-4369-95f5-9055881d22f5",
       "data": [
         {
-          "text": "Expedite"
+          "text": "Expedite "
+        },
+        {
+          "text": "2342",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
         }
       ],
       "isTemplate": false,

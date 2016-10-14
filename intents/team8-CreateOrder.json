@@ -5,6 +5,31 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "03b68bec-6ceb-4055-b74d-dcff1a87fa00",
+      "data": [
+        {
+          "text": "Book Order for "
+        },
+        {
+          "text": "8",
+          "alias": "quantity",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " quantity of item "
+        },
+        {
+          "text": "WM100",
+          "alias": "item_name",
+          "meta": "@team8-item_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
       "id": "ea906ad8-3ada-4908-8a24-c113484b31d3",
       "data": [
         {
@@ -74,26 +99,6 @@
           "alias": "quantity",
           "meta": "@sys.number",
           "userDefined": true
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
-    },
-    {
-      "id": "08ae7852-8793-4610-88fd-ee8ab9967872",
-      "data": [
-        {
-          "text": "place order"
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
-    },
-    {
-      "id": "a3964a82-3e75-4c36-a8a5-f3895f74aafa",
-      "data": [
-        {
-          "text": "Place an order"
         }
       ],
       "isTemplate": false,

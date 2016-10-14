@@ -5,32 +5,37 @@
   "contexts": [],
   "userSays": [
     {
-      "id": "873f0d9a-0ed9-424c-8030-32080821cb1f",
+      "id": "1f6b0627-7ef2-4603-878b-2c8bb1f9f9f5",
       "data": [
         {
-          "text": "query status for 88343"
+          "text": "can u "
+        },
+        {
+          "text": "find",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " order "
+        },
+        {
+          "text": "23234",
+          "alias": "order_number",
+          "meta": "@sys.number",
+          "userDefined": true
         }
       ],
       "isTemplate": false,
       "count": 0
     },
     {
-      "id": "ee37f0ac-e6e8-4a23-be3e-5b69028d8b84",
+      "id": "a09dcc0d-bb2e-4701-816a-8f6d3e645817",
       "data": [
         {
-          "text": "query "
+          "text": "help me with order "
         },
         {
-          "text": "status",
-          "alias": "order_entity",
-          "meta": "@team8-order_entity",
-          "userDefined": true
-        },
-        {
-          "text": " for "
-        },
-        {
-          "text": "88343",
+          "text": "2323",
           "alias": "order_number",
           "meta": "@sys.number",
           "userDefined": true
@@ -43,7 +48,7 @@
       "id": "8d9c8568-1cf4-41f6-a522-6d244d5b2a06",
       "data": [
         {
-          "text": "Find"
+          "text": "Find order"
         }
       ],
       "isTemplate": false,
@@ -53,7 +58,7 @@
       "id": "024a741a-de26-4e64-b1d2-5793534000ad",
       "data": [
         {
-          "text": "Query"
+          "text": "Query order"
         }
       ],
       "isTemplate": false,
@@ -100,31 +105,6 @@
       ],
       "isTemplate": false,
       "count": 0
-    },
-    {
-      "id": "6487114e-951c-4ede-ba32-7753a00c6b98",
-      "data": [
-        {
-          "text": "Can you tell me the "
-        },
-        {
-          "text": "status",
-          "alias": "order_entity",
-          "meta": "@team8-order_entity",
-          "userDefined": true
-        },
-        {
-          "text": " of order "
-        },
-        {
-          "text": "77232",
-          "alias": "order_number",
-          "meta": "@sys.number",
-          "userDefined": true
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
     }
   ],
   "responses": [
@@ -144,18 +124,6 @@
             "Sure. What order number do you want to know about?",
             "Definitely. Order Number please!!",
             "At your service boss. What order number do you need help with?"
-          ]
-        },
-        {
-          "required": true,
-          "dataType": "@team8-order_entity",
-          "name": "order_entity",
-          "value": "$order_entity",
-          "prompts": [
-            "What will you like to know about $order_number - Just say status, carrier, value etc and I can help you get the details you want?",
-            "What is it that you want to know about order $order_number?",
-            "Let me know what information are looking for?",
-            "Sure. What will you like to know about order $order_number?"
           ]
         }
       ],
